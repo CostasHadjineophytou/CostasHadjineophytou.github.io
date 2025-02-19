@@ -129,6 +129,19 @@ h2 {
 }
 
 /* Projects Section */
+.projects {
+    background-color: #f8f9fa; /* Example background color for projects */
+    padding: 5rem 2rem;
+    /* Add more specific styles for projects here */
+}
+
+/* Research Section */
+.research {
+    background-color: #ffffff; /* Example background color for research */
+    padding: 5rem 2rem;
+    /* Add more specific styles for research here */
+}
+
 .project-grid {
     max-width: 1200px;
     margin: 0 auto;
