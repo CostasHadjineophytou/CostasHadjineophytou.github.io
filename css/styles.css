@@ -273,7 +273,21 @@ footer {
     margin-top: 1.5rem;
 }
 
-.demo-link, .details-link {
+.availability-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* margin-top: 1rem; */
+}
+
+.availability-tags span {
+    background-color: #e9ecef;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.demo-link, .details-link, .details-widget {
     display: inline-block;
     padding: 0.5rem 1rem;
     margin-right: 1rem;
@@ -290,6 +304,11 @@ footer {
 .details-link {
     border: 1px solid #007bff;
     color: #007bff;
+}
+
+.details-widget {
+    background-color: #d7d7d7;
+    color: #fff;
 }
 
 .demo-link:hover {
