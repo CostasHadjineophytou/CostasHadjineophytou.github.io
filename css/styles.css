@@ -86,7 +86,7 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     transition: background-color 0.3s ease;
 }
 
@@ -469,3 +469,13 @@ footer {
     justify-content: space-between;
     margin-bottom: 1rem;
 } 
+
+.profile-pic {
+    width: 40vw;
+    height: auto;
+    max-width: 200px;
+    border-radius: 50% / 45%;
+    margin: 2rem auto;
+    display: block;
+    object-fit: cover;
+}
