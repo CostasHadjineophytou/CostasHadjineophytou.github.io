@@ -79,6 +79,12 @@ body {
     color: #007bff;
 }
 
+.welcome-message {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
@@ -86,12 +92,28 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 1rem;
+    margin-top: 3rem;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
     background-color: #0056b3;
+}
+
+.cta-button i {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.profile-pic {
+    width: 40vw;
+    height: auto;
+    max-width: 200px;
+    border-radius: 50% / 45%;
+    margin: 2rem auto 1rem auto;
+    display: block;
+    object-fit: cover;
 }
 
 /* Sections */
@@ -470,12 +492,5 @@ footer {
     margin-bottom: 1rem;
 } 
 
-.profile-pic {
-    width: 40vw;
-    height: auto;
-    max-width: 200px;
-    border-radius: 50% / 45%;
-    margin: 2rem auto;
-    display: block;
-    object-fit: cover;
-}
+
+
