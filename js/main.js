@@ -47,8 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const navLinks = document.querySelectorAll('.nav-links a');
 
         // Open sidebar
-        menuToggle.addEventListener('click', () => {
-            sidebar.style.width = '250px';
+        menuToggle.addEventListener('click', (e) => {
+            sidebar.style.width = '120px';
+            e.stopPropagation(); // Prevent click from propagating to document
         });
 
         // Close sidebar
@@ -61,6 +62,13 @@ document.addEventListener('DOMContentLoaded', function() {
             link.addEventListener('click', () => {
                 sidebar.style.width = '0';
             });
+        });
+
+        // Close sidebar when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!sidebar.contains(e.target) && e.target !== menuToggle) {
+                sidebar.style.width = '0';
+            }
         });
     }
 }); 

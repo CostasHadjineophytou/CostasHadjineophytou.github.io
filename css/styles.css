@@ -67,7 +67,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: #373737;
+    opacity: 0.8;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
