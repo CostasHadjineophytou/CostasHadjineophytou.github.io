@@ -384,6 +384,10 @@ h2 {
         align-items: center; /* Center align the links */
         gap: 1rem; /* Adjust gap as needed */
     }
+
+    .contact {
+        height: 80vh;
+    }
 }
 
 .contact-links a {
@@ -495,6 +499,12 @@ footer {
 .details-link {
     border: 1px solid #007bff;
     color: #007bff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 .details-widget {
@@ -519,6 +529,25 @@ footer {
     
     .project-image {
         height: 200px;
+    }
+
+    .project-content h2 {
+        margin-top: -3rem;
+        padding: 0rem;
+    }
+
+    .project-content .project-links {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align links */
+    }
+
+    .project-content .details-link {
+        margin-right: 0; /* Remove right margin */
+        margin-left: 0; /* Ensure no left margin */
+        margin-top: 1rem; /* Add top margin */
+        width: 100%; /* Full width for centering */
+        text-align: center; /* Center text */
     }
 }
 
