@@ -28,4 +28,39 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Load the navbar
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+            initializeSidebar(); // Initialize sidebar after loading
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+
+    function initializeSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeBtn = document.getElementById('close-btn');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        // Open sidebar
+        menuToggle.addEventListener('click', () => {
+            sidebar.style.width = '250px';
+        });
+
+        // Close sidebar
+        closeBtn.addEventListener('click', () => {
+            sidebar.style.width = '0';
+        });
+
+        // Close sidebar when any link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sidebar.style.width = '0';
+            });
+        });
+    }
 }); 
