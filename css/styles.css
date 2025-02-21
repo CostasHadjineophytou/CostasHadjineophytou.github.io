@@ -378,6 +378,14 @@ h2 {
     gap: 2rem;
 }
 
+@media (max-width: 768px) {
+    .contact-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align the links */
+        gap: 1rem; /* Adjust gap as needed */
+    }
+}
+
 .contact-links a {
     color: #333;
     text-decoration: none;
