@@ -136,6 +136,10 @@ h2 {
     gap: 2rem;
 }
 
+.skills h3 {
+    color: #a4a4a4;
+}
+
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
