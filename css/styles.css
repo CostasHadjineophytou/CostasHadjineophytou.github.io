@@ -144,10 +144,38 @@ h2 {
 }
 
 .skill-tags span {
-    background-color: #e9ecef;
+    /* background-color: #e9ecef; */
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
+}
+
+.language {
+    background-color: #e0f7fa; /* Light cyan */
+}
+
+.framework {
+    background-color: #ffe0b2; /* Light orange */
+}
+
+.tool {
+    background-color: #dcedc8; /* Light green */
+}
+
+.ai-ml {
+    background-color: #f8bbd0; /* Light pink */
+}
+
+.documentation {
+    background-color: #c5cae9; /* Light blue */
+}
+
+.modeling {
+    background-color: #ffccbc; /* Light coral */
+}
+
+.design {
+    background-color: #d1c4e9; /* Light purple */
 }
 
 /* Projects Section */
