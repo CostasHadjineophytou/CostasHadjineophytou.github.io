@@ -622,8 +622,8 @@ footer {
 
 .actions {
     display: flex;
-    align-items: center;
     gap: 1rem;
+    flex-wrap: wrap; /* Allow wrapping */
 }
 
 .actions-link {
@@ -646,6 +646,28 @@ footer {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1rem;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+@media (max-width: 768px) {
+    .actions {
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start; /* Align links to the start */
+        margin-bottom: 1rem; /* Add some space below the links */
+    }
+
+    .overview-header {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .overview-header .actions {
+        order: 1; /* Ensure actions come first */
+    }
+
+    .overview-header h2 {
+        order: 2; /* Ensure h2 comes after actions */
+    }
 }
 
 
