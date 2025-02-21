@@ -9,6 +9,29 @@
 </head>
 <body>
     <!-- Navigation -->
+    <!-- Top Bar for Small Screens -->
+    <div class="top-bar">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+            <a href="#home">Costas Hadjineophytou</a>
+        </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Navigation for Larger Screens -->
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">
@@ -31,7 +54,7 @@
             <p class="welcome-message">Welcome to my portfolio website, where I showcase my projects and research in software engineering.</p>
             
             <img src="assets/images/profile-hero.jpeg" alt="Profile Picture" class="profile-pic">
-            <p>Software Engineer | Mathematician | AI & Machine Learning Specialist</p>
+            <p>Software Engineer | Mathematician</p>
             
             <a href="#projects" class="cta-button"><i class="fas fa-arrow-down"></i> View My Work <i class="fas fa-arrow-down"></i></a>
         </div>

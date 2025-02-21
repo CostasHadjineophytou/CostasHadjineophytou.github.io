@@ -31,14 +31,7 @@ window.addEventListener('scroll', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Load the navbar
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-            initializeSidebar(); // Initialize sidebar after loading
-        })
-        .catch(error => console.error('Error loading navbar:', error));
+    initializeSidebar(); // Initialize sidebar
 
     function initializeSidebar() {
         const sidebar = document.getElementById('sidebar');
