@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Open sidebar
         menuToggle.addEventListener('click', (e) => {
-            sidebar.style.width = '120px';
+            sidebar.style.width = '35vw'; // Changed from 120px to 35vw
             e.stopPropagation(); // Prevent click from propagating to document
         });
 
